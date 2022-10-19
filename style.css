@@ -11,6 +11,22 @@
     height: 300vh;
     right:0;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.footer{
+margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    color: #0F4295;
+}
+
+.footer a{
+    margin-right: 10px;
 }
 
 .wrapper{
@@ -48,7 +64,9 @@ h2{
     font-family: Futura, sans-serif;
     font-weight: normal;
     color: #0F4295;
-    margin: 30px 80px 30px 80px;
+    margin: 30px;
+    padding-bottom: 30px;
+
 }
 
 
@@ -93,7 +111,7 @@ h2{
     background-color: white;
     border: 3px #0F4295 solid;
     width: 700px;
-    height: 700px;
+    height: auto;
     padding: 30px;
     margin-top: 40px;
     margin-right: 40px;
@@ -196,8 +214,6 @@ label{
 }
 
 
-
-
 @media screen and (max-width: 1200px){
     #hero{
         height: auto;
@@ -207,6 +223,13 @@ label{
         text-align: center;
     }
 
+    #hero-image img{
+        width: 100%;
+        height: 1000px;
+    }
+
+
+
     .wrapper{
         flex-direction: column;
         height: auto;
@@ -215,6 +238,7 @@ label{
     .left-side{
         align-items: center;
         margin-bottom: 30px;
+        width: 100%;
     }
 
     .right-side{
@@ -222,6 +246,7 @@ label{
         justify-content: center;
         background-color: #FEED01;
         padding-bottom: 40px;
+        width: 100%;
     }
 
     .btn-learn{
@@ -247,6 +272,7 @@ label{
 
     #hero-image{
         width: 100%;
+        overflow: hidden;
     }
 
     #yellow-stripe1{
@@ -281,7 +307,7 @@ label{
 #content .right-side{
     position: relative;
     flex-direction: column;
-    justify-content: unset;
+    /*justify-content: unset;*/
     color: #0F4295;
     width: 350px;
     padding: 60px;
@@ -310,8 +336,12 @@ label{
     padding: 60px 60px;
 }
 
+#content .left-side h2{
+    width: 100%;
+}
+
 #content .left-side p{
-    padding: 5px 0 20px 0;
+    padding: 5px 40px 20px 40px;
     font-size: 16px;
     line-height: 26px;
     font-family: "Acumin Pro", sans-serif;
@@ -335,6 +365,7 @@ label{
     background-color: #0F4295;
     margin-left: 0;
     margin-top: 40px;
+    height: auto;
 }
 
 #content .btn-learn a{
@@ -342,8 +373,8 @@ label{
     color: white;
     text-decoration: none;
     border: none;
-
 }
+
 
 
 @media screen and (max-width: 1200px){
@@ -413,4 +444,11 @@ footer{
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 560px){
+
+#content .left-side p{
+font-size: 10px;
 }
