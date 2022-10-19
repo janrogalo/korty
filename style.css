@@ -129,11 +129,17 @@ h2{
 
 #hero-form button{
     width: 200px;
+    height: 50px;
     background-color: #FEED01;
     border: none;
+    margin-top: 40px;
     padding: 10px 30px;
-    margin-top: 60px;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    color: #0F4295;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btn-learn {
@@ -153,16 +159,14 @@ h2{
     justify-content: center;
     align-items: center;
     position: absolute;
-    /*background-color: #FEED01;*/
     border-radius: 50%;
     height: 200px;
     width: 200px;
     right: 0;
-    bottom: 105px;
+    bottom: 135px;
     margin-right: 50px;
     text-align: center;
 }
-
 
 .ball svg{
     position: absolute;
@@ -176,6 +180,23 @@ h2{
     text-align: left;
     margin: 0;
 }
+
+input{
+    border: #0F4295 1px solid;
+    color: #0F4295;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 14px;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    color: #0F4295;
+}
+
+
+
 
 @media screen and (max-width: 1200px){
     #hero{
@@ -290,7 +311,7 @@ h2{
 }
 
 #content .left-side p{
-    padding: 5px 80px 20px 0;
+    padding: 5px 0 20px 0;
     font-size: 16px;
     line-height: 26px;
     font-family: "Acumin Pro", sans-serif;
@@ -327,7 +348,6 @@ h2{
 
 @media screen and (max-width: 1200px){
 
-
     #content .wrapper{
         flex-direction: column;
         height: auto;
@@ -342,6 +362,12 @@ h2{
         width: 100%;
         padding: 60px;
     }
+}
+
+
+footer{
+
+    bottom: 0;
 }
 
 
@@ -366,17 +392,20 @@ h2{
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 60px;
     border: 1px solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
+    position: relative;
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    bottom: 30px;
+
 }
 
 .close:hover,
