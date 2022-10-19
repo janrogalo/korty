@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#yellow-stripe1{
+    background-color: gold;
+    position: absolute;
+    width: 350px;
+    height: 300%;
+    right:0;
+    z-index: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-side{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+h1{
+    font-size: 70px;
+    font-family: Rockwell, sans-serif;
+    font-weight: normal;
+    color: #0F4295;
+    margin: 80px 80px 30px 80px;
+}
+
+h2{
+    font-size: 24px;
+    font-family: Futura, sans-serif;
+    font-weight: normal;
+    color: #0F4295;
+    margin: 30px 80px 30px 80px;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    #yellow-stripe1{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*/// HERO SECTION ////*/
+
+
+#hero{
+    width: 100%;
+    height: 100vh;
+}
+
+
+#hero-image{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    opacity: 0.42;
+    z-index: -1;
+}
+
+#hero-image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+#hero-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border: 4px darkblue solid;
+    width: 700px;
+    height: 700px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-right: 40px;
+    z-index: 100;
+}
+
+#hero-form p{
+    margin-bottom: 1vw;
+    font-size: 16px;
+    font-family: "Acumin Pro", sans-serif;
+    color: #0F4295;
+}
+
+#hero a{
+    font-size: 12px;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    color: #0F4295;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#hero-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#hero-form input{
+    width: 60%;
+    height: 30px;
+}
+
+#hero-form button{
+    width: 200px;
+    background-color: gold;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.btn-learn {
+    width: 220px;
+    height: 50px;
+    background-color: gold;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.ball{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: gold;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    right: 0;
+    bottom: 105px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#hero-form h2{
+    font-size: 24px;
+    font-family: Futura, sans-serif;
+    font-weight: normal;
+    color: #0F4295;
+    text-align: left;
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px){
+    #hero{
+        height: auto;
+    }
+
+    #hero h2{
+        text-align: center;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side{
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .right-side{
+        padding: 0;
+        justify-content: center;
+        background-color: gold;
+        padding-bottom: 40px;
+    }
+
+    .btn-learn{
+        margin-left: calc(50% - 130px);
+        margin-top: 20px;
+        }
+
+    #hero-form p{
+        margin-bottom: 2vw;
+        font-size: 14px;
+    }
+
+    #hero-form{
+        position: relative;
+        margin-top: 30px;
+        margin-right:0;
+    }
+
+    .ball{
+        position: absolute;
+        margin-right: 70px;
+    }
+
+    #hero-image{
+        width: 100%;
+    }
+
+    #yellow-stripe1{
+     display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///// content section //////*/
+#content{
+    position: relative;
+    width: 100%;
+    height: 100vw;
+}
+
+#content .left-side{
+    align-items: center;
+    justify-content: center;
+}
+
+#content .right-side{
+    flex-direction: column;
+    justify-content: unset;
+    color: #0F4295;
+    width: 80%;
+    padding: 60px;
+}
+
+#content .right-side p{
+    padding: 5px 80px 20px 40px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Acumin Pro", sans-serif;
+    font-weight: normal;
+    color: #0F4295;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+
+
+    #content .wrapper{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+#clay-block{
+    position: absolute;
+    width: 1500px;
+    height: 1300px;
+    right: 0;
+    top: 700px;
+    background-color: #e35c2a;
+    z-index: 1;
+}
